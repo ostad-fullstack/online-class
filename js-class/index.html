@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Js Learning</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        
+        <h1 id="hello">Hello Javascript</h1>
+         <hr/>
+        <h3 >Ooutput: <span id="output"></span></h3>
+
+        <button onClick="add()">increment</button>
+        <button onClick="add2()">increment++x</button>
+        <button onClick="addstr()">addstr</button>
+        <button onClick="substract()">substract</button>
+        <button onClick="multiply()">multiply</button>
+        <button onClick="division()">division</button>
+        <button onClick="exponential()">exponential</button>
+        <button onClick="modulus()">modulus</button>
+
+       
+
+        <script>
+           
+           var x, y, mystr, value2, value1;
+           x = 5;
+           y = 3;
+           mystr = "12";
+
+           x=x<<1
+    
+            value1=10;
+            value2=10;
+            //if(value1==value2){
+                //document.getElementById("output").innerHTML =  "number same and type diff";
+            //}
+                
+            if(value1===value2)
+            {
+                document.getElementById("output").innerHTML =  "type is same and value also ";
+            }
+                
+
+
+           function modulus(){
+               document.getElementById("output").innerHTML =  1234234234421%2
+           }
+           function exponential(){
+               document.getElementById("output").innerHTML =  x**y
+           }
+           function add(){
+               document.getElementById("output").innerHTML = x++;// assigned then increment 
+           }
+           function add2(){
+               document.getElementById("output").innerHTML = ++x;// increment then assign 
+           }
+           function addstr(){
+               document.getElementById("output").innerHTML = mystr + x +y;
+           }
+           function substract(){
+               document.getElementById("output").innerHTML = x-y;
+           }
+           function multiply(){
+               document.getElementById("output").innerHTML = x*y;
+           }
+           function division(){
+               document.getElementById("output").innerHTML = x/y;
+           }
+
+        </script>
+        
+    </body>
+</html>

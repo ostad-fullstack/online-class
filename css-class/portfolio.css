@@ -1,0 +1,208 @@
+*{
+	padding: 0px; 
+	margin: 0px;
+}
+
+.my-parent-menu{
+
+}
+.my-parent-menu ul 
+{
+	background-color: green;
+	text-align: center;
+}
+
+.my-parent-menu ul li{
+	color: white;
+	display: inline-flex;
+	padding: 10px 15px;
+	margin:10px;
+	width: 100px;
+}
+
+.my-parent-menu ul li:hover {
+	color: white;
+	display: inline-flex;
+	padding: 10px 15px;
+	margin:10px;
+	width: 100px;
+	background-color: orange;
+}
+.my-parent-menu ul li a{
+	color: white;
+	text-decoration: none;
+
+}
+
+.child-menu ul{
+	display: none;
+	position: absolute;
+}
+
+.my-parent-menu ul li:hover .child-menu ul {
+	display: block;
+	position: absolute;
+	background-color: green;
+	color: white;
+	margin-top: 30px;
+	width: 150px;
+}
+
+.my-parent-menu ul li:hover .child-menu ul li {
+	display: block;
+	padding: 10px 15px;
+
+}
+.child-menu-2
+{
+	display: none;
+}
+.child-menu-2 ul
+{
+	width: 120px;
+	margin-left: 120px;
+	position: absolute;
+	display: none;
+}
+
+.cloud-computing:hover .child-menu-2
+{
+	display: block;
+	position: absolute;
+}
+
+.middle-div
+{
+	width: 100%;
+	height: 600px;
+	background-image: url('portfolio/Solid-Black-Gold-Pattern-.jpg');
+	background-size: 100% 600px; 
+}
+.middle-div-content{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	position: absolute;
+}
+.content
+{
+	width: 30%;
+	margin: 0 auto;
+	height: 60%;
+	position: absolute;
+	top: 20%;
+	left: 35%;
+}
+.content-image
+{
+	position: absolute;
+	width: 40%;
+	height: 60%
+	left: 30%;
+	
+}
+.my-image{
+
+	border-radius: 50%;
+	border: 4px dotted white;
+}
+
+.cont-my-name
+{
+	height: 40%;
+	position: absolute;
+	top: 55%;
+	text-align: center;;
+	color: white;
+}
+.cont-my-button{
+	top: 70%;
+	position: absolute;
+	margin: 0 auto;
+}
+
+.middle-div-2
+{
+	width: 100%;
+	height: 400px;
+	background-color: white;
+}
+
+.middle-div-2-content1
+{
+	width: 40%;
+	float: left;
+	overflow: hidden;
+	height: 80%;
+	text-align: center;
+	margin: 0 auto;
+}
+.middle-div-2-content2
+{
+	width: 60%;
+	overflow: hidden;
+	height: 80%;
+}
+
+.middle-div-3
+{
+	width: 100%;
+	height: 500px;
+	margin: 0 auto;
+}
+.interest-content
+{
+	width: 90%;
+	margin: 0 auto;
+	height: 200px;
+	margin-top: 25px;
+}
+
+
+.interest
+{
+	width: 20%;
+	height: 60px;
+	background-color: #ecf0f1;
+	border-radius: 10px;
+	float: left;
+	overflow: hidden;
+	margin-right: 35px;
+	margin-bottom: 30px;
+}
+.interest:hover
+{
+	background-color: white;
+	box-shadow: 1px 2px 5px gray;
+}
+.interest:hover .in-icon h1
+{
+	color: orange;
+}
+
+
+.in-icon
+{
+	width: 30%;
+	float: left;
+	overflow: hidden;
+	border-right: 1px solid gray;
+	height: 100%;
+
+}
+.in-text{
+	width: 69%;
+	overflow: hidden;
+	height: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+

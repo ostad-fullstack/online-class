@@ -1,0 +1,46 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+.wrapper
+{
+	width: 95%;
+	margin: 0 auto;
+}
+
+.mydiv{
+	height: 300px;
+	width: 500px;
+	background-color: blue;
+	position: sticky;
+	left: 500px;
+	top: 50px;
+}
+.child_div
+{
+	height: 100px;
+	width: 150px;
+	background-color: red;
+	position: relative;
+	left: 40px;
+	top:30px;
+	overflow: hidden;
+	opacity: 
+}
+
+.child_div h5{
+	opacity: 0;
+}
+.child_div:hover
+{
+	height: 100px;
+	width: 150px;
+	background-color: red;
+	position: relative;
+	left: 40px;
+	top:30px;
+	transform: rotateY(180deg);
+	transition: 1s;
+
+}
