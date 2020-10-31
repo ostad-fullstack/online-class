@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Our calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="calculator.css">
+        <script src="calculator.js" async defer></script>
+    </head>
+    <body>
+
+        <div class="wrapper">
+
+            <div class="calculator">
+                <div class="result">
+                    <div class="myoutput">
+                        <span id="history" style="font-size:20px; padding-right:15px;">
+                           
+                        </span>
+                        <br>
+                         <span id="finalOutput" style="padding-right:15px;">
+                           
+                        </span>
+                    </div>
+                </div>
+
+                <div class="input_data">
+                    <div class="input1">
+
+                        <button  class="input1button" style="border-right:1px solid gray" onClick="numberInput('+')">+</button>
+                        <button  class="input1button" style="border-right:1px solid gray" onClick="numberInput('-')">-</button>
+                        <button  class="input1button" style="border-right:1px solid gray" onClick="numberInput('x')">x</button>
+                        <button  class="input1button" onClick="numberInput('/')">/</button>
+
+                    </div>
+                    <div class="input2">
+                        <div class="input2-left" >
+                            <div class="input2-left-1" >
+                                <button  class="input1button-1 border-style" id="inputValue" onClick="numberInput(7)" >7</button>
+                                <button  class="input1button-1 border-style" id="inputValue" onClick="numberInput(8)" >8</button>
+                                <button  class="input1button-1 border-style" id="inputValue" onClick="numberInput(9)" >9</button>
+                            </div>
+                            <div class="input2-left-2" >
+                                <button  class="input1button-1 border-style" id="inputValue" onClick="numberInput(4)" >4</button>
+                                <button  class="input1button-1 border-style" id="inputValue" onClick="numberInput(5)" >5</button>
+                                <button  class="input1button-1 border-style" id="inputValue" onClick="numberInput(6)" >6</button>
+                            </div>
+                            <div class="input2-left-3" >
+                                <button  class="input1button-1 border-style" id="inputValue" onClick="numberInput(1)" >1</button>
+                                <button  class="input1button-1 border-style" id="inputValue" onClick="numberInput(2)" >2</button>
+                                <button  class="input1button-1 border-style" id="inputValue" onClick="numberInput(3)" >3</button>
+                            </div>
+                            <div class="input2-left-4" >
+                                <button  class="input1button-1 border-style" id="inputValue" onClick="numberInput(0)" >0</button>
+                                <button  class="input1button-1 border-style">.</button>
+                                <button  class="input1button-1 border-style"  onClick="allClear()">AC</button>
+                            </div>
+                        </div>
+                        
+                        <div class="input2-right" >
+                            <button class="equal-sign" onClick="calcalateNow()">
+                                =
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            
+            
+            </div>
+
+
+            
+        </div>
+       
+        
+    </body>
+</html>

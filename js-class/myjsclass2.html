@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src="myjs.js" ></script>
+    </head>
+    <body>
+
+        <h1 id="demo_check">javascript class 2 </h1>
+        <hr/>
+        <h1 id="demo_output"> </h1>
+        <hr/>
+
+            <input style="padding:10px 5px; font-size:14px;" name ="mynumber" type="text" id="mynumber" onkeyup="mycalculativefunction()" />
+
+            <button style="padding:10px 5px; font-size:14px;" >Caculate</button>
+
+            <h4>Result: <span id="cal_result">0</span></h4>
+
+            <div class="my-story">
+                <p id="demo55"></p>
+            </div>
+
+            <div id="colodiv" style="background:black; height:100px; width:120px;">
+            </div>
+
+
+
+            <button style="padding:10px 5px; font-size:14px;" onclick="myfunc1()" >red</button>
+            <button style="padding:10px 5px; font-size:14px;" onclick="myfunc2()" >green</button>
+            <button style="padding:10px 5px; font-size:14px;" onclick="myfunc3()" >blue</button>
+
+
+            
+
+
+
+            <script>
+
+                function myfunc1()
+                {
+                    document.getElementById("demo55").innerHTML = "red color selected"
+                    document.getElementById("colodiv").style.background= "red"
+                    document.getElementById("colodiv").style.height= "300px"
+                }
+                function myfunc2()
+                {
+                    document.getElementById("demo55").innerHTML = "green color selected"
+                    document.getElementById("colodiv").style.background= "green"
+                }
+                function myfunc3()
+                {
+                    document.getElementById("demo55").innerHTML = "blue color selected"
+                    document.getElementById("colodiv").style.background= "blue"
+                }
+
+
+                function mycalculativefunction()
+                {
+                    var number = document.getElementById("mynumber").value;
+
+                    var intNumber = parseInt(number);
+
+                    var result = addOddNumber(intNumber);
+
+                    document.getElementById("cal_result").innerHTML = result
+                    
+                }
+
+                var re = addOddNumber(100)
+                var name = "Adil Reza"
+                var gender = 2;
+                var result = makeFormalName(name, gender)
+
+                document.getElementById("demo_output").innerHTML = result
+            </script>
+    </body>
+
+</html>
